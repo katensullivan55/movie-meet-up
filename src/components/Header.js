@@ -10,3 +10,8 @@ export default function Header() {
     )
 };
 
+//Header component then Nav component
+//Responsive
+//Have navbar in div component
+//nav bar has login, signup
+//after logging in, dashboard, movies, events
