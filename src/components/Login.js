@@ -4,6 +4,7 @@ import './Login.css';
 
 export default function Login() {
     return (
+        <link rel="stylesheet" href="Login.css">
         <form action="action_page.php" method="post">
             <div class="imgcontainer">
                 <img src="img_avatar2.png" alt="Avatar" class="avatar"/>
