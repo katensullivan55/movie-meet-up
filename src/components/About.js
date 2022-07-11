@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 
 import aboutImage from './about-image.jpg';
+//import aboutImage from '.src/assets/cover/about-image.jpg';
 
 
 function About() {
@@ -15,7 +16,7 @@ function About() {
 We understand there is a desire for tangible connections and we hope to bridge this yearning. We focus on using APIs to list local movie theater showtimes, have hangout meet ups promoted by our site members, and encourage users to watch cinema together in-person. 
             </p>
             <p>
-This world has no shortage of socially starved individuals, and we see that as an opportunity to build authentic human connections. We're excited to simplify in-person hangouts for everyone through our website.
+This world has no shortage of socially-starved individuals, and we see that as an opportunity to build authentic human connections. We're excited to simplify in-person hangouts for everyone through our website.
             </p>
         </div>
         </section>
