@@ -5,6 +5,7 @@ import Header from './components/Header';
 //import Sidebar from './components/Sidebar';
 import About from './components/About';
 import ContactForm from './components/Footer';
+import Events from './components/Events';
 //import Signup from './pages/Signup';
 //import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -36,10 +37,12 @@ function App() {
         {!contactSelected ? (
           <>
             <About currentCategory={currentCategory}></About>
+            <Events></Events>
           </>
         ) : (
           <ContactForm></ContactForm>
-        )}
+        )
+        }
       </main>
     </div>
   );

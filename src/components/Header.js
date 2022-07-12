@@ -25,7 +25,12 @@ function Header(props) {
         <ul className="flex-row">
           <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
+              About Us
+            </a>
+          </li>
+          <li className="mx-2">
+            <a data-testid="events" href="#events" onClick={() => setContactSelected(false)}>
+              Events
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
