@@ -35,4 +35,17 @@
       "last 1 safari version"
     ]
   }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katensullivan55/movie-meet-up.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katensullivan55/movie-meet-up/issues"
+  },
+  "homepage": "https://github.com/katensullivan55/movie-meet-up#readme"
 }
