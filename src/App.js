@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Events from './components/Events';
 //import Signup from './pages/Signup';
 //import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/Login'
 
 function App() {
   const [AC] = useState([
@@ -70,6 +71,10 @@ function App() {
        
       </Routes>
     </div>
+      <Header />
+      <Login />
+      <Sidebar />
+      <About />
       <Footer />
       </Router>
     </div>
