@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import './Sidebar.css';
 
 
@@ -9,6 +9,8 @@ export default function Sidebar() {
         </div>
     )
 }
+*/
+
 //upcoming events
 //event component?
 //treat it like adding to a cart
