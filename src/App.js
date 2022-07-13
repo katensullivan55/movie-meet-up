@@ -8,8 +8,6 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import Login from './containers/Login';
-import Events from './components/Events';
-import Message from './components/Message';
 //import Dashboard from './components/Dashboard/Dashboard';
 //import Preferences from './components/Preferences/Preferences';
 
