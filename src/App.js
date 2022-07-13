@@ -9,6 +9,8 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import Login from './containers/Login';
 import Events from './components/Events';
+import Movies from './pages/Movies';
+import SearchBar from './components/SearchBar';
 //import Dashboard from './components/Dashboard/Dashboard';
 //import Preferences from './components/Preferences/Preferences';
 
@@ -40,6 +42,7 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
+            <SearchBar></SearchBar>
             <About currentCategory={currentCategory}></About>
             <Events></Events>
             <Footer></Footer>
