@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../utils/helpers';
+import './Header.css'
 
 function Header(props) {
   const {
@@ -18,7 +19,7 @@ function Header(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> </span> Movie Meet Up
+          <span role="img" aria-label="camera"> </span> Movie Search
         </a>
       </h2>
       <nav>
