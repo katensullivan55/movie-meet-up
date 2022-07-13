@@ -28,11 +28,6 @@ function Header(props) {
               About Us
             </a>
           </li>
-          <li className="mx-2">
-            <a data-testid="events" href="#events" onClick={() => setContactSelected(false)}>
-              Events
-            </a>
-          </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
