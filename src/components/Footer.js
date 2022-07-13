@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css';
 
 
-export default function Footer() {
+function Footer() {
     return (
         <div className='footer'>
-            <h4>Made with stress</h4>
+            <h6>Made with stress</h6>
+            <h6>© 2022 Movie-Meet-Up USA, Inc. All rights reserved.</h6>
+            
         </div>
     )
 }
+  
+  export default Footer;
