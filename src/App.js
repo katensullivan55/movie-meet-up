@@ -6,6 +6,8 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
+import SearchBar from './components/SearchBar';
+
 function App() {
   const [AC] = useState([
     {
@@ -33,6 +35,7 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
+            <SearchBar></SearchBar>
             <About currentCategory={currentCategory}></About>
             <Footer></Footer>
           </>
