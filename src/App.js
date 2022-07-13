@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-//import { BrowserRouter, Route, Switch } from 'react-router-dom';
-//import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 //import Sidebar from './components/Sidebar';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
-import Login from './containers/Login';
-import Events from './components/Events';
-import Movies from './pages/Movies';
+
 import SearchBar from './components/SearchBar';
-//import Dashboard from './components/Dashboard/Dashboard';
-//import Preferences from './components/Preferences/Preferences';
 
 function App() {
   const [AC] = useState([
@@ -38,13 +32,11 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Header>
-      <Login />
       <main>
         {!contactSelected ? (
           <>
             <SearchBar></SearchBar>
             <About currentCategory={currentCategory}></About>
-            <Events></Events>
             <Footer></Footer>
           </>
         ) : (
