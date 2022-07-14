@@ -10,7 +10,9 @@ function Header(props) {
     currentCategory,
     setContactSelected,
     searchSelected,
-    setSearchSelected
+    setSearchSelected,
+    aboutSelected,
+    setAboutSelected
   } = props;
 
   useEffect(() => {
@@ -29,7 +31,7 @@ function Header(props) {
         <ul className="flex-row">
 
           <li class='navig' className={`mx-2 ${searchSelected && 'navActive'}`}>
-            <span class='linkStyle' onClick={ event => {setSearchSelected(true); setContactSelected(false)}} >Search</span>
+            <span class='linkStyle' onClick={ event => {setSearchSelected(true); setContactSelected(false); setAboutSelected(false)}} >Search</span>
           </li>
           
           {categories.map((category) => (
@@ -40,6 +42,7 @@ function Header(props) {
                 onClick={() => {
                   setCurrentCategory(category);
                   setSearchSelected(false);
+                  setAboutSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
@@ -48,16 +51,41 @@ function Header(props) {
             ))}  
 
           <li class='navig' className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={ event => {setSearchSelected(false); setContactSelected(true)}} class='linkStyle'>Contact</span>
+            <span onClick={ event => {setSearchSelected(false); setContactSelected(true); setAboutSelected(false)}} class='linkStyle'>Contact</span>
           </li>
           
           {categories.map((category) => (
             <li className={`mx-1 ${ currentCategory.name === category.name && !contactSelected && 'navActive' }`} key={category.name} >
-              <span onClick={() => { setCurrentCategory(category); setContactSelected(false); }} >
+              <span onClick={() => { 
+                setCurrentCategory(category); 
+                setContactSelected(false); 
+                setAboutSelected(false); 
+              }} 
+              >
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
           ))}
+
+          <li class='navig' className={`mx-2 ${aboutSelected && 'navActive'}`}>
+            <span onClick={ event => {setSearchSelected(false); setContactSelected(false); setAboutSelected(true)}} class='linkStyle'>About</span>
+          </li>
+          
+          {categories.map((category) => (
+            <li className={`mx-1 ${ currentCategory.name === category.name && !aboutSelected && 'navActive' }`} key={category.name} >
+              <span onClick={() => { 
+                setCurrentCategory(category); 
+                setContactSelected(false); 
+                setSearchSelected(false)
+              }} 
+              >
+                {capitalizeFirstLetter(category.name)}
+              </span>
+            </li>
+          ))}
+
+
+          
         </ul>
       </nav>
     </header>

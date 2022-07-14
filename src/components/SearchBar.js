@@ -5,7 +5,7 @@ import Movies from '../pages/Movies';
 const SearchBar = () => {
 
     const [searchInput, setSearchInput] = useState("");
-    const [movieQuery, setMovieQuery] = useState('batman');
+    const [movieQuery, setMovieQuery] = useState('Batman');
 
     const handleChange = (e) => {
         e.preventDefault();
