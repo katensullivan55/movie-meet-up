@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 //import Sidebar from './components/Sidebar';
-import About from './components/About';
-import ContactForm from './components/Contact';
+// import About from './components/About';
+import ContactForm from './components/Contact.js';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 
@@ -20,6 +20,8 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(AC[0]);
 
+  const [searchSelected, setSearchSelected] = useState(false);
+
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
@@ -28,6 +30,8 @@ function App() {
         AC={AC}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        searchSelected={searchSelected}
+        setSearchSelected={setSearchSelected}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       >
@@ -35,15 +39,20 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <SearchBar></SearchBar>
-            <About currentCategory={currentCategory}></About>
-            <Footer></Footer>
           </>
         ) : (
           <ContactForm></ContactForm>
         )
         }
+        {!searchSelected ? (
+          <>
+          </>
+        ) : (
+          <SearchBar></SearchBar>
+        )
+        }
       </main>
+      <Footer></Footer>
     </div>
   );
 }
