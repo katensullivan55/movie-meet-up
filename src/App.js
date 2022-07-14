@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-// import Sidebar from './components/Sidebar';
 import About from './components/About';
 import ContactForm from './components/Contact.js';
 import Footer from './components/Footer';
@@ -24,6 +23,7 @@ function App() {
   const [searchSelected, setSearchSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   const [aboutSelected, setAboutSelected] = useState(false);
+  const [loginSelected, setLoginSelected] = useState(false);
 
   // function to display main page
   return (
