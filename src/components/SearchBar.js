@@ -28,7 +28,7 @@ const SearchBar = () => {
                 placeholder="Search here"
                 onChange={handleChange}
                 value={searchInput} />
-                <button onClick={handleSearch}>Search</button>
+                <button onClick={handleSearch} >Search</button>
             </div>
             <Movies searchTerm={movieQuery}></Movies>
         </div>

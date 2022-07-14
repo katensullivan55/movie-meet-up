@@ -27,11 +27,8 @@ function Header(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li>
-            <></>
-          </li>
 
-          <li className={`mx-2 ${searchSelected && 'navActive'}`}>
+          <li class='navig' className={`mx-2 ${searchSelected && 'navActive'}`}>
             <span class='linkStyle' onClick={ event => {setSearchSelected(true); setContactSelected(false)}} >Search</span>
           </li>
           
@@ -50,8 +47,8 @@ function Header(props) {
             </li>
             ))}  
 
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)} class='linkStyle'>Contact</span>
+          <li class='navig' className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <span onClick={ event => {setSearchSelected(false); setContactSelected(true)}} class='linkStyle'>Contact</span>
           </li>
           
           {categories.map((category) => (
