@@ -19,7 +19,7 @@ const Movies = ({ searchTerm }) => {
     }
 
     return (
-        <div className="App">
+      <div className="App">
         <h1>Movies</h1>
         <div className="popular-movies">
           {movies.map((movie) => {

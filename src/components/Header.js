@@ -25,6 +25,7 @@ function Header(props) {
       <nav>
         <ul className="flex-row">
           <li>
+            <></>
           </li>
           <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
