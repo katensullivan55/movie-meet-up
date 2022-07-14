@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-//import Sidebar from './components/Sidebar';
+// import Sidebar from './components/Sidebar';
 // import About from './components/About';
 import ContactForm from './components/Contact.js';
 import Footer from './components/Footer';
@@ -18,12 +18,12 @@ function App() {
     { name: 'landscape', description: '' },
   ]);
 
+  // sets what appears in main part of page
   const [currentCategory, setCurrentCategory] = useState(AC[0]);
-
   const [searchSelected, setSearchSelected] = useState(false);
-
   const [contactSelected, setContactSelected] = useState(false);
 
+  // function to display main page
   return (
     <div>
       <Header
@@ -58,41 +58,3 @@ function App() {
 }
 
 export default App;
-/*
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Header />
-        <Sidebar />
-      <div className="container">
-      
-      <Routes>
-        <Route
-        path="/"
-        element={<About />}
-        />
-
-      
-       
-      </Routes>
-    </div>
-      <Header />
-      <Login />
-      <Sidebar />
-      <About />
-      <Footer />
-      </Router>
-    </div>
-    
-  );
-}
-/*        <Route
-        path="/login"
-        element={<Login />}
-        /> 
-                <Route 
-        path="/signup" 
-        element={<Signup />}
-        />
-*/
