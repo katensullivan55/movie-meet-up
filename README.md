@@ -2,6 +2,8 @@
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
+![Screen Shot 2022-07-14 at 6 55 23 PM](https://user-images.githubusercontent.com/93236563/179118334-e2a51f4d-c4b7-43d8-91fe-785bfa187c69.png)
+
 ## Description
 
 Search movies with keywords to see all the movies that have been made with that name.
