@@ -1,7 +1,6 @@
 header {
     padding: 10px 0;
     background: rgb(180,58,63);
-    background: linear-gradient(90deg, rgba(180,58,63,1) 0%, rgba(201,128,198,1) 50%, rgba(252,162,69,1) 100%);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
