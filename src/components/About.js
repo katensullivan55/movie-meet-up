@@ -12,7 +12,9 @@ function About() {
             <img src={aboutImage} className="my-2" style={{ width: "50%" }} alt="cover" />
             <div className="mx-2" >
             <p>
-                Movies bring people together, and we wanted to create a site to bring people together to look up movies and talk about them.
+            At Movie Search, we believe there is a better way to focus on what movies you want to watch. We use APIs to list movie titles based on the user-inputted movie search.
+            <br/>
+            This world has no shortage of movie-crazy individuals, and we see that as an opportunity to build on that. We're excited to simplify movie searching for everyone through our website.
             </p>
         </div>
         </section>
