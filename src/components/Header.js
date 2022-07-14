@@ -17,21 +17,24 @@ function Header(props) {
 
   return (
     <header className="flex-row px-1">
+      <h1>
+        <a data-testid="link" href="/"><span role="img" aria-label="camera"></span>Movie Search</a>
+      </h1>
       <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> </span> Movie Search
-        </a>
+        Search your favorite movies, leave reviews!
       </h2>
       <nav>
         <ul className="flex-row">
           <li>
             <></>
           </li>
+          {/*about us link to lower on the page*/}
           <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
               <span class='linkStyle'>About Us</span>
             </a>
           </li>
+          {/* contact us link to generate contact form in footer */}
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)} class='linkStyle'>Contact</span>
           </li>

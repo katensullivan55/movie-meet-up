@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 //import Sidebar from './components/Sidebar';
 import About from './components/About';
-import ContactForm from './components/Contact';
+import ContactForm from './components/Contact.js';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 
@@ -36,7 +36,7 @@ function App() {
         {!contactSelected ? (
           <>
             <SearchBar></SearchBar>
-            <About currentCategory={currentCategory}></About>
+          {/*  <About currentCategory={currentCategory}></About> */}
             <Footer></Footer>
           </>
         ) : (

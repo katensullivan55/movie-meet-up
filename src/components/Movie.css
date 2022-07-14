@@ -1,4 +1,4 @@
-.polaroid a {
+.polaroid .a {
     background: #ffffff;
     display: inline-block;
     margin: 20px;
@@ -14,8 +14,13 @@
     z-index: 0;
     position: relative;
   }
+
+.polaroid h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font:200, rgb(137, 61, 19);
+}
   
-  .polaroid a:after {
+  .polaroid .a:after {
     color: #333;
     font-size: 25px;
     content: attr(title);
@@ -23,12 +28,12 @@
     top: 15px;
   }
   
-  .polaroid img {
+  .polaroid .a img {
     display: block;
     width: 250px;
   }
   
-  .polaroid a:hover {
+  .polaroid .a:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     transform: scale(1.2);
