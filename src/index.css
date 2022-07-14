@@ -15,7 +15,7 @@ code {
 */
 
 main {
-  margin: 0 auto;
+  margin: 0;
   max-width: 100%;
   padding: 10px 30px;
 }
@@ -34,7 +34,7 @@ main {
 
 * {
   box-sizing: border-box;
-  
+  margin: 0;
 }
 
 html,
