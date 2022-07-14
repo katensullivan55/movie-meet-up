@@ -6,6 +6,7 @@ import About from './components/About';
 import ContactForm from './components/Contact.js';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
+import Login from './components/Login'
 
 function App() {
   const [AC] = useState([
@@ -37,6 +38,8 @@ function App() {
         setContactSelected={setContactSelected}
         aboutSelected={aboutSelected}
         setAboutSelected={setAboutSelected}
+        loginSelected={loginSelected}
+        setLoginSelected={setLoginSelected}
       >
       </Header>
       <main>
@@ -59,6 +62,13 @@ function App() {
           </>
         ) : (
           <About></About>
+        )
+        }
+        {!loginSelected ? (
+          <>
+          </>
+        ) : (
+          <Login></Login>
         )
         }
       </main>

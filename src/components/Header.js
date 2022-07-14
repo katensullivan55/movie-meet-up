@@ -12,7 +12,9 @@ function Header(props) {
     searchSelected,
     setSearchSelected,
     aboutSelected,
-    setAboutSelected
+    setAboutSelected,
+    loginSelected,
+    setLoginSelected
   } = props;
 
   useEffect(() => {
@@ -31,7 +33,7 @@ function Header(props) {
         <ul className="flex-row">
 
           <li class='navig' className={`mx-2 ${searchSelected && 'navActive'}`}>
-            <span class='linkStyle' onClick={ event => {setSearchSelected(true); setContactSelected(false); setAboutSelected(false)}} >Search</span>
+            <span class='linkStyle' onClick={ event => {setSearchSelected(true); setContactSelected(false); setAboutSelected(false); setLoginSelected(false)}} >Search</span>
           </li>
           
           {categories.map((category) => (
@@ -43,6 +45,7 @@ function Header(props) {
                   setCurrentCategory(category);
                   setSearchSelected(false);
                   setAboutSelected(false);
+                  setLoginSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
@@ -51,7 +54,7 @@ function Header(props) {
             ))}  
 
           <li class='navig' className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={ event => {setSearchSelected(false); setContactSelected(true); setAboutSelected(false)}} class='linkStyle'>Contact</span>
+            <span onClick={ event => {setSearchSelected(false); setContactSelected(true); setAboutSelected(false); setLoginSelected(false)}} class='linkStyle'>Contact</span>
           </li>
           
           {categories.map((category) => (
@@ -59,7 +62,8 @@ function Header(props) {
               <span onClick={() => { 
                 setCurrentCategory(category); 
                 setContactSelected(false); 
-                setAboutSelected(false); 
+                setAboutSelected(false);
+                setLoginSelected(false); 
               }} 
               >
                 {capitalizeFirstLetter(category.name)}
@@ -68,7 +72,7 @@ function Header(props) {
           ))}
 
           <li class='navig' className={`mx-2 ${aboutSelected && 'navActive'}`}>
-            <span onClick={ event => {setSearchSelected(false); setContactSelected(false); setAboutSelected(true)}} class='linkStyle'>About</span>
+            <span onClick={ event => {setSearchSelected(false); setContactSelected(false); setAboutSelected(true); setLoginSelected(false)}} class='linkStyle'>About</span>
           </li>
           
           {categories.map((category) => (
@@ -76,7 +80,27 @@ function Header(props) {
               <span onClick={() => { 
                 setCurrentCategory(category); 
                 setContactSelected(false); 
-                setSearchSelected(false)
+                setSearchSelected(false);
+                setLoginSelected(false);
+              }} 
+              >
+                {capitalizeFirstLetter(category.name)}
+              </span>
+            </li>
+          ))}
+
+
+          <li class='navig' className={`mx-2 ${loginSelected && 'navActive'}`}>
+            <span onClick={ event => {setSearchSelected(false); setContactSelected(false); setAboutSelected(false); setLoginSelected(true)}} class='linkStyle'>Login</span>
+          </li>
+          
+          {categories.map((category) => (
+            <li className={`mx-1 ${ currentCategory.name === category.name && !loginSelected && 'navActive' }`} key={category.name} >
+              <span onClick={() => { 
+                setCurrentCategory(category); 
+                setContactSelected(false); 
+                setSearchSelected(false);
+                setAboutSelected(false);
               }} 
               >
                 {capitalizeFirstLetter(category.name)}
