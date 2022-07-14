@@ -24,13 +24,15 @@ function Header(props) {
       </h2>
       <nav>
         <ul className="flex-row">
+          <li>
+          </li>
           <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About Us
+              <span class='linkStyle'>About Us</span>
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+            <span onClick={() => setContactSelected(true)} class='linkStyle'>Contact</span>
           </li>
           {categories.map((category) => (
             <li

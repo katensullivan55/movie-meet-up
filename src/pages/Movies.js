@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Movie from '../components/Movie'
+import React, { useEffect, useState } from 'react';
+import Movie from '../components/Movie';
 
 const Movies = ({ searchTerm }) => {
     console.log(searchTerm);

@@ -5,13 +5,12 @@ import Header from './components/Header';
 import About from './components/About';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
-
 import SearchBar from './components/SearchBar';
 
 function App() {
   const [AC] = useState([
     {
-      name: 'commercial',
+      name: 'Movie Search',
       description: '',
     },
     { name: 'portraits', description: '' },
@@ -31,7 +30,8 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Header>
+      >
+      </Header>
       <main>
         {!contactSelected ? (
           <>
