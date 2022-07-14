@@ -1,6 +1,6 @@
 # Movie Search
 
-<img width="1498" alt="Screen Shot 2022-07-14 at 3 30 09 PM" src="https://user-images.githubusercontent.com/93236563/179104749-ee6ac0f8-57be-45e0-869c-bd56a1f465d4.png">
+![Screen Shot 2022-07-14 at 6 55 23 PM](https://user-images.githubusercontent.com/93236563/179106816-643027b0-d809-4e1b-9531-daf243ad05e1.png)
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
